@@ -36,3 +36,180 @@
     transform: rotate(360deg);
   }
 }
+
+.Panel {
+  text-align: center;
+  width: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  height: 60vh;
+  display: flex;
+  border-top: tomato;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(41, 86%, 75%);
+  box-shadow: 15px 10px 10px 10px hsl(41, 86%, 25%);
+}
+
+.Panel form{
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.Panel h1 {
+  font-size: 2.5em;
+
+}
+.Panel button {
+  padding: 5px;
+  margin: 15px;
+  max-width: 150px;
+  border-radius: 10px;
+  
+}
+
+#LoginRegisterButton {
+  background-color: #6178f4;
+}
+
+#LoginRegisterButton:hover {
+  animation-name: bg-color-logreg-button;
+  animation-duration: 1s;
+}
+
+@keyframes bg-color-logreg-button{
+  100%{
+    background-color: #899afa;
+  }
+}
+
+#GetMeToButton {
+  background-color: #979dbe;
+}
+
+#GetMeToButton:hover {
+  animation-name: bg-color-getme-button;
+  animation-duration: 1s;
+}
+
+@keyframes bg-color-getme-button{
+  100%{
+    background-color: #bec3db;
+  }
+}
+
+.Home {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  max-width: 800px;
+  margin: auto;
+  gap: 3em;
+}
+
+.Joke {
+  padding: 2%;
+  width: 60%;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  background-color: hsl(41, 86%, 75%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.4em;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  color: #5a431b;
+}
+
+.JokeButton {
+  width: 10em;
+  background-color: #388d5d ;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+.JokeButton:hover {
+  animation-name: bg-color-joke-button;
+  animation-duration: 1s;
+}
+
+@keyframes bg-color-joke-button{
+  100% {
+    background-color: #2ca73c;
+  }
+}
+
+.CommentList {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  gap: 1rem;
+  background-color: #5a431b;
+  padding: 2%;
+  color: hsl(41, 86%, 75%);
+  margin: auto;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+.CommentInput input {
+  border-radius: 10px;
+  background-color: hsl(41, 86%, 75%);
+  height: 3em;
+  font-size: 1em;
+  width: 80%;
+  max-width: 100%;
+  margin: auto;
+  padding: 1%;
+  text-align: center;
+}
+
+.CommentInput button {
+  border-radius: 10px;
+  margin: 1em;
+  font-size: medium;
+  background-color: #388d5d ;
+}
+
+.CommentInput button:hover {
+  animation-name: bg-color-joke-button;
+  animation-duration: 1s;
+}
+
+.container {
+  position: relative;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.del-button {
+  background-color: rgb(248, 79, 79);
+  font-size: medium;
+  border-radius: 5px;
+}
+
+.del-button:hover {
+  animation-name: bg-color-del-button;
+  animation-duration: 1s;
+}
+
+@keyframes bg-color-del-button{
+  100% {
+    background-color: rgb(247, 9, 9);
+  }
+}
+
