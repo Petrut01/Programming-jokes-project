@@ -80,6 +80,8 @@
 #LoginRegisterButton:hover {
   animation-name: bg-color-logreg-button;
   animation-duration: 1s;
+  animation-fill-mode: forwards;
+
 }
 
 @keyframes bg-color-logreg-button{
@@ -95,6 +97,8 @@
 #GetMeToButton:hover {
   animation-name: bg-color-getme-button;
   animation-duration: 1s;
+  animation-fill-mode: forwards;
+
 }
 
 @keyframes bg-color-getme-button{
@@ -141,6 +145,8 @@
 .JokeButton:hover {
   animation-name: bg-color-joke-button;
   animation-duration: 1s;
+  animation-fill-mode: forwards;
+
 }
 
 @keyframes bg-color-joke-button{
@@ -184,6 +190,8 @@
 .CommentInput button:hover {
   animation-name: bg-color-joke-button;
   animation-duration: 1s;
+  animation-fill-mode: forwards;
+
 }
 
 .container {
@@ -205,6 +213,8 @@
 .del-button:hover {
   animation-name: bg-color-del-button;
   animation-duration: 1s;
+  animation-fill-mode: forwards;
+
 }
 
 @keyframes bg-color-del-button{
@@ -213,3 +223,23 @@
   }
 }
 
+.LogoutButton {
+  border-radius: 10px;
+  font-size: medium;
+  background-color: #5a431b ;
+  color: hsl(41, 86%, 75%);
+  
+}
+
+.LogoutButton:hover {
+  animation-name: bg-color-logout-button;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes bg-color-logout-button{
+  100% {
+    background-color: #835f20;
+  }
+}

@@ -2,6 +2,7 @@ import styles from './index.module.css';
 import { Link } from "react-router-dom";
 import { useSelector } from 'react-redux';
 import { State } from '../../state/reducers';
+import LogoutButton from '../../modules/LogoutButton';
 
 export default function Navbar() {
   const userName = useSelector((state: State) => state.login);
@@ -12,7 +13,7 @@ export default function Navbar() {
   
         
           <>
-          {userName && <li>Welcome, {userName} !</li>}
+          {userName && <li>Welcome, {userName} ! <LogoutButton/></li>}
           {!userName && <li className="btn btn-success"><Link to="/get-started">Join Us</Link></li>}
           </>
           

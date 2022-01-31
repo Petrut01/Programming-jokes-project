@@ -37,4 +37,12 @@ export const loginUser = (userName: string) => {
     }
 }
 
+export const logoutUser = () => {
+    return (dispatch: Dispatch<LoginAction>) => {
+        dispatch({
+            type: ActionType.LOGOUT
+        });
+    }
+}
+
 

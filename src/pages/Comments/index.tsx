@@ -36,7 +36,6 @@ const CommentSection = () => {
             <button onClick={() => deleteComment(comm)} className="del-button" >Delete comment</button>
             </div>
             </div>
-            <hr></hr>
             </div>
             ))}
           

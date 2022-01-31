@@ -18,8 +18,11 @@ interface LoginUserAction {
     type: ActionType.LOGIN,
     payload: string
 }
+interface LogoutUserAction {
+    type: ActionType.LOGOUT
+}
 
 
-export type LoginAction = LoginUserAction;
+export type LoginAction = LoginUserAction | LogoutUserAction;
 
 export type CommentAction = AddComment | DeleteComment | DeleteAllComments;
